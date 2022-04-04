@@ -100,7 +100,9 @@ button:hover {
 .landing {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5)) ,url("./images/landing.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
     height: 100vh;
     width: 100vw;
     margin-top: 21vh;
@@ -123,11 +125,13 @@ button:hover {
 #welcome {
     color:white;
     font-size: 42px;
+    text-align: center;
 }
 
 .welcome h2 {
     font-weight: 200;
     font-size: 40px;
+    text-align: center;
 }
 
 .services {
@@ -327,4 +331,62 @@ footer ul li a:hover {
 footer h4 {
     color: #688f1e;
     font-size: 1rem;
+}
+@media only screen and (max-width: 700px) {
+    /* .landing {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5)) ,url("./images/landing.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-size: 100% 100%;
+        height: 100vh;
+        width: 100vw;
+        margin-top: 21vh;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    } */
+    
+    .welcome {
+        /* top: 15%; */
+    }
+    
+    #welcome {
+        font-size: 30px;
+    }
+    
+    .welcome h2 {
+        font-size: 28px;
+    }
+	/* .navbar {
+		position: relative;
+	}
+
+    .nav-links {
+        padding: 5px 22px;
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		text-align: right;
+		top: 80px;
+		right:-100%;
+		z-index: 1;
+		float: right;
+	}
+
+	.nav-links.active {
+		background: rgb(246, 246, 233);
+		right: 0;
+
+	}
+
+	.nav-item, .nav-btn {
+		padding: 10px 0;
+	}
+
+	.nav-icon {
+		display: flex;
+        margin-right: 2rem;
+	} */
 }
