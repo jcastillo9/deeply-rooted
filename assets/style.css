@@ -146,7 +146,7 @@ button:hover {
 .service-img{
     background-image: url("./images/mowing-lawn.jpg");
     background-repeat: no-repeat;
-    float:left; 
+    float: center;
     margin-left: 5vw;
     width: 39%;
     height: 100%;
@@ -154,6 +154,9 @@ button:hover {
     border-radius: 10px 10px 10px 10px;
 }
 
+.hide {
+    display: none;
+}
 .service-list{
     display: flex;
     flex-direction:column;
@@ -169,7 +172,7 @@ button:hover {
 }
 
 .service-list h2 {
-    float: left;
+    float: center;
     font-size: 1.5rem;
     color: #00050b;
     font-family: 'Montserrat Subrayada', sans-serif;
@@ -194,7 +197,7 @@ button:hover {
 
 .card {
     margin: 1rem;
-    flex: 1 0 10px;
+    flex: 1 0 150px;
     border-radius: .5rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     text-align: center;
@@ -217,12 +220,12 @@ hr {
 .contact {
     height: 80vh;
     width: 100vw;
-    text-align: center;
     padding-top:8vh;
     padding-bottom: 8vh;
 }
 
 .contact h2 {
+    text-align: center;
     float: center;
     font-size: 2rem;
     color: #00050b;
@@ -333,19 +336,6 @@ footer h4 {
     font-size: 1rem;
 }
 @media only screen and (max-width: 700px) {
-    .landing {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5)) ,url("./images/landing.png");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-size: 100% 100%;
-    }
-    
-    .welcome {
-        /* top: 15%; */
-    }
-    
     #welcome {
         font-size: 30px;
     }
@@ -353,34 +343,99 @@ footer h4 {
     .welcome h2 {
         font-size: 28px;
     }
-	/* .navbar {
-		position: relative;
-	}
 
-    .nav-links {
-        padding: 5px 22px;
-		display: flex;
-		flex-direction: column;
-		position: absolute;
-		text-align: right;
-		top: 80px;
-		right:-100%;
-		z-index: 1;
-		float: right;
-	}
+    .services {
+        display: block;
+        padding-top: 6vh;
+    }
+    
+    .service-img{
+        margin-right: 4vw;
+        margin-left:4vw;
+        margin-top: 4vh;
+        width: 90vw;
+        height: 40vh;
+        float: center;
+    }
+    
+    .service-list{
+        width: 100%;
+        padding-top: 5vh;
+    }
+    
+    .hide {
+        display: inline;
+        font-size: 1.5rem;
+        font-family: 'Montserrat Subrayada', sans-serif;
+        font-weight: 700;
+    }
 
-	.nav-links.active {
-		background: rgb(246, 246, 233);
-		right: 0;
+    .active {
+        display: none;
+    }
+    
+    .services-list{
+        margin-right: 4vw;
+        margin-left:4vw;
+        width: 100%;
+        margin-bottom: 4vh;
+    }
 
-	}
+    .card {
+        flex: 0 1 140px;
+    }
+    
+    .contact {
+        padding-top: 6vh;
+    }
+    .contact h2 {
+        font-size: 1.5rem;
+    }
 
-	.nav-item, .nav-btn {
-		padding: 10px 0;
-	}
+    .contact-form {
+        display: block;
+    }
 
-	.nav-icon {
-		display: flex;
-        margin-right: 2rem;
-	} */
+    .message-forms{
+        width: 100%;
+        float: center;
+    }
+    
+    .message-forms label{
+        width: 100px;
+    }
+    
+    .form-group input{
+        width: 300px;
+    }
+    
+    .form-group .message-input {
+        padding: 0.5rem;
+        font-size: 1rem;
+        height: 150px;
+        font-size: inherit;
+    }
+
+    .contact-hours{
+        display: flex;
+        flex-direction:column;
+        float:right; 
+        padding-top:4vh;
+        padding-bottom:4vh;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        margin-right: 5vh;
+        margin-left: 5vw;
+        width: 40%;
+        top: 25%;
+        border-radius:.5rem;
+    }
+    
+    .contact-hours h3 {
+        text-align: justify;
+        display: block;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
 }
+    
