@@ -335,7 +335,8 @@ footer h4 {
     color: #688f1e;
     font-size: 1rem;
 }
-@media only screen and (max-width: 600px) {
+@media only screen 
+  and (min-device-width: 375px) {
     #welcome {
         font-size: 30px;
     }
@@ -419,14 +420,8 @@ footer h4 {
     .contact-hours{
         display: flex;
         flex-direction:column;
-        float:right; 
-        padding-top:4vh;
-        padding-bottom:4vh;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-        margin-right: 5vh;
-        margin-left: 5vw;
-        width: 40%;
+        float:center; 
+        width: 100%;
         top: 25%;
         border-radius:.5rem;
     }
