@@ -251,8 +251,6 @@ hr {
     display: flex;
     flex-direction:column;
     float:right; 
-    padding-top:4vh;
-    padding-bottom:4vh;
     margin-top: 5vh;
     margin-bottom: 5vh;
     margin-right: 5vh;
@@ -310,13 +308,11 @@ footer {
     align-items: center;
     justify-content: space-around;
     height: 10vh;
-    padding-right: 1.5rem;
     text-align: center;
 }
 
 footer ul li {
     display: inline-block;
-    align-items: center;
     font-size: 1rem;
     font-weight: 500;
 }
@@ -394,11 +390,14 @@ footer h4 {
 
     .contact-form {
         display: block;
+        align-items: center;
     }
 
     .message-forms{
         width: 100%;
-        float: center;
+        margin-left: 10vh;
+        margin-right: 10vh;
+        margin-top: 0;
     }
     
     .message-forms label{
@@ -408,34 +407,31 @@ footer h4 {
     .form-group input{
         width: 300px;
     }
-    
-    .form-group .message-input {
-        padding: 0.5rem;
-        font-size: 1rem;
-        height: 150px;
-        font-size: inherit;
-    }
 
     .contact-hours{
-        display: flex;
-        flex-direction:column;
-        float:center; 
-        padding-top:4vh;
-        padding-bottom:4vh;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-        margin-right: 5vh;
-        margin-left: 5vw;
-        width: 100%;
-        top: 25%;
-        border-radius:.5rem;
+        padding-top:6vh;
+        width: 80%;
+        float: center;
     }
     
     .contact-hours h3 {
-        text-align: justify;
-        display: block;
-        font-size: 1.2rem;
-        font-weight: 700;
+        text-align: center;
+    }
+
+    .contact-hours p {
+        text-align: center;
+    }
+
+    footer {
+        height: 6vh;
+    }
+    footer ul li {
+        display: none;
+    }
+
+    footer h4 {
+       font-size: .9rem;
+
     }
 }
     
