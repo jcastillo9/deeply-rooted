@@ -26,6 +26,9 @@ header {
     color: #f5f5f5;
  }
 
+.hidden {
+    display: none;
+}
 .icons p {
     vertical-align: middle;
     padding-left: 40px;
@@ -101,7 +104,6 @@ button:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5)) ,url("./images/landing.png");
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -139,17 +141,17 @@ button:hover {
     width: 100vw;
     text-align: center;
     padding-top:8vh;
-    padding-bottom: 8vh;
     display: flex;
 }
 
 .service-img{
     background-image: url("./images/mowing-lawn.jpg");
     background-repeat: no-repeat;
-    float: center;
+    background-position: center center;
+    background-size: cover;
     margin-left: 5vw;
     width: 39%;
-    height: 100%;
+    height: 90%;
     top: 25%;
     border-radius: 10px 10px 10px 10px;
 }
@@ -168,25 +170,23 @@ button:hover {
     top: 25%;
     border-radius:.5rem;
     padding-top: 10vh;
-    
 }
 
 .service-list h2 {
     float: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #00050b;
     font-family: 'Montserrat Subrayada', sans-serif;
     margin-left: 1.5rem;
     font-weight: 700;
 }
 
-.services-list{
+.serviceslist{
     display: flex;
     flex-flow: row wrap;
     border-radius: 2%;
-    justify-content: center;
-    margin-left: 2vw;
-    margin-right: 2vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #img {
@@ -332,6 +332,19 @@ footer h4 {
     font-size: 1rem;
 }
 @media only screen and (max-width: 500px) {
+    .icons p {
+        padding-left: 15px;
+        text-align: justify;
+        display: inline-block;
+        color: #f5f5f5;
+        font-size: 13.5px;
+        margin-bottom: 0; 
+    }
+
+    .hidden a {
+        color: #f5f5f5;
+    }
+
     #welcome {
         font-size: 30px;
     }
@@ -342,26 +355,29 @@ footer h4 {
 
     .services {
         display: block;
+        height: 100%;
         padding-top: 6vh;
     }
     
     .service-img{
-        margin-right: 4vw;
-        margin-left:4vw;
         margin-top: 4vh;
-        width: 90vw;
+        width: 80%;
         height: 40vh;
-        float: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .service-list{
+        margin-left: auto;
+        margin-right: auto;
         width: 100%;
-        padding-top: 5vh;
+        padding-top: 1.5rem;
+        padding-bottom: 6vh;
     }
     
     .hide {
         display: inline;
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-family: 'Montserrat Subrayada', sans-serif;
         font-weight: 700;
     }
@@ -370,42 +386,45 @@ footer h4 {
         display: none;
     }
     
-    .services-list{
-        margin-right: 4vw;
-        margin-left:4vw;
-        width: 100%;
-        margin-bottom: 4vh;
+    .serviceslist{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 50%;
+        align-content: center;
     }
 
     .card {
-        flex: 0 1 140px;
+        width: 200px;
     }
     
     .contact {
+        display: block;
+        height: 100%;
         padding-top: 6vh;
-    }
-    .contact h2 {
-        font-size: 1.5rem;
     }
 
     .contact-form {
-        display: block;
-        align-items: center;
+        display:block;
+        width: 75%;
+        height: 40vh;
+        margin-left: auto;
+        margin-right: auto;
     }
 
+    .form {
+        margin-left: 2vw;
+        margin-right: 2vw;
+        width: 50%;
+    }
+    
     .message-forms{
-        width: 100%;
-        margin-left: 10vh;
-        margin-right: 10vh;
+        width: 80%;
         margin-top: 0;
     }
     
-    .message-forms label{
-        width: 100px;
-    }
-    
     .form-group input{
-        width: 300px;
+        width: 250px;
     }
 
     .contact-hours{
@@ -416,6 +435,7 @@ footer h4 {
     
     .contact-hours h3 {
         text-align: center;
+        font-size: 1.5rem;
     }
 
     .contact-hours p {
