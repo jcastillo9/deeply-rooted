@@ -30,10 +30,10 @@ header {
     display: none;
 }
 
-/* .number a[href^="tel"]{
+a[href^="tel"]{
     color:inherit;
     text-decoration:none;
-} */
+}
 .icons p {
     vertical-align: middle;
     padding-left: 40px;
