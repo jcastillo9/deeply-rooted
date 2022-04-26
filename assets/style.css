@@ -30,7 +30,7 @@ header {
     display: none;
 }
 
-.number {
+.number a{
     color: white;
 }
 .icons p {
