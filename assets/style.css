@@ -140,7 +140,7 @@ button:hover {
     height: 90vh;
     width: 100vw;
     text-align: center;
-    padding-top:8vh;
+    padding-top:6vh;
     display: flex;
 }
 
@@ -416,6 +416,7 @@ footer h4 {
         display: block;
         height: 100%;
         padding-top: 6vh;
+        padding-bottom: 6vh;
     }
     
     .service-img{
@@ -427,11 +428,10 @@ footer h4 {
     }
     
     .service-list{
-        margin-left: auto;
-        margin-right: auto;
         height: 50%;
         width: 90%;
         padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
        
     }
     
