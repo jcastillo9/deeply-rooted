@@ -168,7 +168,7 @@ button:hover {
     margin-right: 5vw;
     margin-left: 5vw;
     width: 55%;
-    height: 90%;
+    /* height: 90%; */
 }
 
 .service-list h2 {
@@ -416,7 +416,7 @@ footer h4 {
         display: block;
         height: 100%;
         padding-top: 6vh;
-        padding-bottom: 6vh;
+        /* padding-bottom: 6vh; */
     }
     
     .service-img{
