@@ -29,6 +29,10 @@ header {
 .hidden a {
     display: none;
 }
+
+.number {
+    color: white;
+}
 .icons p {
     vertical-align: middle;
     padding-left: 40px;
