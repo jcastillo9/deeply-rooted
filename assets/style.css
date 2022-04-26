@@ -173,7 +173,6 @@ button:hover {
     margin-right: 5vw;
     margin-left: 5vw;
     width: 55%;
-    /* height: 90%; */
 }
 
 .service-list h2 {
@@ -204,7 +203,6 @@ button:hover {
     display: inline-block;
     columns: 2;
     list-style-position: outside;
-    /* grid-template-columns: 50% 50%; */
 }
 
 .serviceslist ul li{
@@ -224,21 +222,6 @@ button:hover {
     color: #688f1e;
 }
 
-/* .card {
-    margin: 1rem;
-    flex: 1 0 150px;
-    border-radius: .5rem;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    text-align: center;
-}
-
-.card h3 {
-    margin: 1rem;
-    font-size: 1rem;
-    font-weight: 700;
-    color: #f17312;
-} */
-
 hr {
     height: 5px;
     width: 80%;
@@ -247,11 +230,9 @@ hr {
 }
 
 .contact {
-    /* height: 80vh; */
     width: 100vw;
     padding-top:6vh;
     padding-bottom: 6vh;
-    /* border: 2px solid black; */
 }
 
 .contact h2 {
@@ -265,33 +246,14 @@ hr {
 
 .contact-form {
     display: flex;
-    /* height: 90%; */
     width: 100%;
     align-items: center;
     justify-content: center;
-    /* border: 2px solid blue; */
 }
 
-/* .form {
-    margin-left: 5vw;
-    width: 60%;
-    flex-direction: column;
-    margin-top:4vh;
-    margin-bottom:4vh;
-    border: 2px solid black;
-} */
-
 .contact-hours{
-    /* display: flex; */
-    /* flex-direction:column; */
-    /* margin-top: 5vh; */
-    /* margin-bottom: 5vh; */
-    /* margin-right: 5vh; */
-    /* margin-left: 5vw; */
     width: 40%;
-    /* top: 25%; */
     border-radius:.5rem;
-    /* border: 2px solid red; */
 }
 
 .contact-hours h3 {
@@ -300,34 +262,6 @@ hr {
     font-size: 1.2rem;
     font-weight: 700;
 }
-
-/* .message-forms{
-    float: left;
-    margin: 2vh;
-    height: 40vh;
-    width: 90%;
-}
-
-.message-forms .form-group {
-    margin: 0.625rem 0;
-}
-
-.message-forms label{
-    cursor: pointer;
-    width: 80px;
-    vertical-align: top;
-}
-
-.form-group input{
-    width: 400px;
-}
-
-.form-group .message-input {
-    padding: 0.5rem;
-    font-size: 1rem;
-    height: 150px;
-    font-size: inherit;
-} */
 
 .contact-hours p {
     text-align: center;
@@ -450,7 +384,6 @@ footer h4 {
         display: block;
         height: 100%;
         padding-top: 6vh;
-        /* padding-bottom: 6vh; */
     }
     
     .service-img{
@@ -502,7 +435,6 @@ footer h4 {
     .contact-form {
         display:block;
         width: 75%;
-        /* height: 40vh; */
         margin-left: auto;
         margin-right: auto;
     }
@@ -512,21 +444,10 @@ footer h4 {
         margin-right: 2vw;
         width: 50%;
     }
-    
-    .message-forms{
-        width: 80%;
-        margin-top: 0;
-    }
-    
-    .form-group input{
-        width: 250px;
-    }
 
     .contact-hours{
-        /* padding-top:3vh; */
         width: 80%;
         justify-content: center;
-        /* float: center; */
         margin-left: auto;
         margin-right: auto;
     }
@@ -559,17 +480,5 @@ footer h4 {
        font-size: .9rem;
 
     }
-
-    
-
-   /* .navbar-toggler {
-       margin: none;
-       height: 100%;
-       font-size: 1.2rem;
-       padding: 1px;
-    }
-   .navbar-toggler-icon {
-        font-size: 1.2rem;
-    } */
 }
     
