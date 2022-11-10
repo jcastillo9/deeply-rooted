@@ -1,484 +1,360 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Montserrat:wght@300;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Montserrat:wght@300;700&display=swap");
 
-html,body {
-    margin:0;
-    padding:0;
-    overflow-x:hidden;
-    scroll-behavior: smooth;
-    scroll-padding-top: 22vh;
-    font-family: 'Montserrat', sans-serif;
+* {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-header {
-    margin: 0;
-    width: 100vw;
-    height: 7vh;
-    background-color: #688f1e;
-    position: fixed;
-    z-index: 1;
- }
- 
+.nav-container {
+  width: 100vw;
+  position: fixed;
+  z-index: 8;
+}
+
+.icons-container {
+  font-size: 15px;
+  background-color: #688f1e;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.email,
+.bi {
+  color: white;
+}
+
+.nav {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  display: flex;
+}
+
+.logo {
+  width: 45vw;
+  color: #688f1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .first {
-    color: #000000;
- }
-
-.email {
-    color: #f5f5f5;
- }
-
-.hidden a {
-    display: none;
+  color: #000000;
 }
 
-a[href^="tel"]{
-    color:inherit;
-    text-decoration:none;
-}
-.icons p {
-    vertical-align: middle;
-    padding-left: 40px;
-    text-align: center;
-    display: inline-block;
-    color: #f5f5f5;
-    font-size: 1rem;
-    line-height: 7vh;  
-    margin-bottom: 0; 
-}
- 
 #leaf {
-    color: #688f1e;
+  color: #688f1e;
 }
 
-h1 {
-    padding-left: 30px;
-    display: inline-block;
-    font-size: 2.2rem;
-    color: #00050b;
-    font-family: 'Montserrat Subrayada', sans-serif;
-    color: #688f1e;
+.logo-text,
+.first {
+  font-family: "Montserrat Subrayada", sans-serif;
+  font-size: 2.2rem;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #f5f5f5;
-    height: 15vh;
-    width: 100vw;
-    padding-right: 1.5rem;
-    position: relative;
-    text-align: center;
+.nav-section {
+  display: flex;
+  width: 100%;
 }
 
-nav ul li {
-    display: inline-block;
-    align-items: center;
-    font-size: 1rem;
-    font-weight: 500;
+.nav-menu {
+  width: 55vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 0;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #688f1e;
-    padding-right: 2rem;
+.toggle-button {
+  position: absolute;
+  top: 4.75rem;
+  right: 2.25rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 25px;
 }
 
-nav ul li a:hover {
-    color: #090a09;
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #688f1e;
+  border-radius: 10px;
 }
 
-button, button form a{
-    background-color: #f17312;
-    height: 6vh;
-    border-radius: 10px;
-    border: none;
-    text-align: right;
+.nav-link {
+  text-decoration: none;
+  color: #688f1e;
 }
 
-button a, button {
-    text-decoration: none;
-    color: white;
-    margin: .25rem;
+.nav-link:hover {
+  color: #090a09;
 }
 
-button:hover { 
-    transform: scale(1.1); 
+.nav-btn {
+  background-color: #f17312;
+  border-radius: 10px;
+  border: none;
 }
 
+.nav-btn:hover {
+  transform: scale(1.05);
+}
+
+#links {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
 .landing {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5)) ,url("./images/landing.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    margin-top: 21vh;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./images/landing.png");
+  background-position: center center;
+  background-size: cover;
+  height: 75vh;
+  margin-top: 138.5px;
+  text-align: center;
 }
 
 .welcome {
-    vertical-align: middle;
-    width: 50%;
-    height: 50%;
-    top: 25%;
-    text-align: center;
-    margin: 0 auto;
-    position: relative;
-    color: white; 
+  width: 50%;
+  top: 30%;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  color: white;
 }
 
-#welcome {
-    color:white;
-    font-size: 42px;
-    text-align: center;
+.welcome-center {
+  color: white;
+  font-size: 42px;
+  text-align: center;
+  font-family: "Montserrat Subrayada", sans-serif;
 }
 
-.welcome h2 {
-    font-weight: 200;
-    font-size: 40px;
-    text-align: center;
+.welcome text {
+  font-weight: 200;
+  font-size: 40px;
+  text-align: center;
 }
 
 .services {
-    height: 90vh;
-    width: 100vw;
-    text-align: center;
-    padding-top:6vh;
-    display: flex;
+  text-align: center;
+  padding: 3rem;
+  display: flex;
 }
 
-.service-img{
-    background-image: url("./images/mowing-lawn.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    margin-left: 5vw;
-    width: 50%;
-    height: 90%;
-    top: 25%;
-    border-radius: 10px 10px 10px 10px;
+.service-img {
+  background-image: url("./images/mowing-lawn.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 1.5rem;
+  width: 50%;
+  height: 60vh;
+  top: 25%;
+  border-radius: 10px 10px 10px 10px;
 }
 
-.hide {
-    display: none;
-}
-.service-list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction:column;
-    float:right; 
-    margin-right: 5vw;
-    margin-left: 5vw;
-    width: 55%;
+.service-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  float: right;
+  margin: 1.5rem;
+  width: 55%;
 }
 
-.service-list h2 {
-    float: center;
-    font-size: 2rem;
-    color: #00050b;
-    font-family: 'Montserrat Subrayada', sans-serif;
-    margin-left: 1.5rem;
-    font-weight: 700;
+.service-title {
+  font-family: "Montserrat Subrayada", sans-serif;
+  font-weight: 700;
 }
 
-.serviceslist{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2%;
-    margin-left: auto;
-    margin-right: auto;
+.services-list {
+  padding: 1rem;
 }
 
-.serviceslist ul {
-    text-align: justify;
-    list-style-type: none ;
-    color: #f17312;
-    font-size: 1rem;
-    font-weight: 700;
-    margin: 1rem;
-    display: inline-block;
-    columns: 2;
-    list-style-position: outside;
+.grid-list {
+  text-align: justify;
+  list-style-type: none;
+  color: #f17312;
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  columns: 2;
 }
 
-.serviceslist ul li{
-    text-align: left;
-    list-style-position: inside;
-    text-indent: -1rem;
-  
+.list-item {
+  text-align: left;
 }
 
-.serviceslist #img {
-    font-size: 16px;
+.list-item #leaf {
+  justify-content: center;
+  font-size: 16px;
+  padding: 0.25rem 0.25rem 0;
+  color: #688f1e;
 }
 
-#img {
-    font-size: 2.2rem;
-    margin: .5rem;
-    color: #688f1e;
-}
-
-hr {
-    height: 5px;
-    width: 80%;
-    margin: auto;
-    color: #00050b;
+.horizontal-bar {
+  width: 80%;
+  margin: auto;
+  padding: auto;
+  border-bottom-style: solid;
+  border-bottom-width: 0.5px;
+  color: #363636;
 }
 
 .contact {
-    width: 100vw;
-    padding-top:6vh;
-    padding-bottom: 6vh;
+  padding: 3rem;
 }
 
-.contact h2 {
-    text-align: center;
-    float: center;
-    font-size: 2rem;
-    color: #00050b;
-    font-family: 'Montserrat Subrayada', sans-serif;
-    margin: 1rem; 
+.contact-title {
+  text-align: center;
+  color: #00050b;
+  font-family: "Montserrat Subrayada", sans-serif;
 }
 
-.contact-form {
-    display: flex;
+.contact-hours {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+}
+
+.contact-hours-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.hours {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.footer {
+  text-align: center;
+  margin: 1rem 0;
+  color: #688f1e;
+}
+
+#footer-btn {
+  display: none;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+  font-size: 1rem;
+}
+
+.footer-links {
+  text-decoration: none;
+  color: #688f1e;
+  align-items: center;
+}
+
+.footer-links:hover {
+  color: #090a09;
+}
+
+.footer-text {
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 865px) {
+  .nav-section {
+    display: block;
+  }
+
+  .nav-menu {
+    flex-direction: column;
     width: 100%;
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .toggle-button {
+    display: flex;
+    z-index: 7;
+  }
+
+  .logo {
+    width: 75vw;
+  }
+
+  #nav-btn {
+    display: none;
+  }
+
+  .landing {
+    margin-top: 84px;
+  }
+
+  .services {
+    display: block;
+  }
+
+  .service-img {
+    margin: auto;
+    width: 90%;
+    height: 45vh;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  .service-list {
+    margin: 1rem auto;
+    display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
-}
+    width: 100%;
+  }
 
-.contact-hours{
-    width: 40%;
-    border-radius:.5rem;
-}
-
-.contact-hours h3 {
-    text-align: center;
-    display: block;
-    font-size: 1.2rem;
+  .service-title {
+    font-family: "Montserrat Subrayada", sans-serif;
     font-weight: 700;
-}
+  }
 
-.contact-hours p {
-    text-align: center;
-    display: block;
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-.appt-btn {
-    display: none;
-}
-
-footer {
+  #contact-btn {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 10vh;
-    text-align: center;
+    margin: 1rem auto;
+  }
 }
 
-footer ul li {
+@media (max-width: 480px) {
+  .landing {
+    margin-top: 170px;
+  }
+
+  .welcome {
+    top: 25%;
+  }
+
+  .contact-hours {
+    width: 80%;
+  }
+
+  .footer-list {
     display: inline-block;
-    font-size: 1rem;
-    font-weight: 500;
+    padding: 0 3rem 0 0.2rem;
+    columns: 2;
+    width: 90%;
+  }
 }
-
-footer ul li a {
-    text-decoration: none;
-    color: #688f1e;
-    padding-right: 2rem;
-}
-
-footer ul li a:hover {
-    color: #090a09;
-}
-
-footer h4 {
-    color: #688f1e;
-    font-size: 1rem;
-}
-
-#ig {
-    display: inline;
-    color: #ffffff;
-}
-
-
-@media only screen and (max-width: 1100px) {
-    nav {
-        display: block;
-    }
-
-    nav h1 {
-        margin-top: 2rem;
-    }
-
-    nav button{
-        display: none;
-    }
-
-    .services {
-        display: block;
-    }
-    
-    .service-img{
-        width: 90%;
-        height: 40vh;
-    }
-
-    .service-list{
-        width: 90%;
-        height: 50%;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .icons p {
-        padding-left: 15px;
-        text-align: justify;
-        display: inline-block;
-        color: #f5f5f5;
-        font-size: 13.5px;
-        margin-bottom: 0; 
-    }
-
-    nav {
-        display: block;
-    }
-
-    nav h1 {
-        margin-top: 0rem;
-    }
-
-    nav button{
-        display: none;
-    }
-
-    .hidden a {
-        color: #f5f5f5;
-        display: inline;
-    }
-
-    h1 {
-        padding-left: 10px;
-        display: block;
-        font-size: 1.7rem;
-        padding-top: 1.2rem;
-    }
-
-    #welcome {
-        font-size: 30px;
-    }
-    
-    .welcome h2 {
-        font-size: 28px;
-    }
-
-    .services {
-        display: block;
-        height: 100%;
-        padding-top: 6vh;
-    }
-    
-    .service-img{
-        margin-top: 4vh;
-        margin-bottom: 4vh;
-        width: 80%;
-        height: 30vh;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .service-list{
-        height: 50%;
-        width: 90%;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-       
-    }
-    
-    .hide {
-        display: inline;
-        font-size: 2rem;
-        font-family: 'Montserrat Subrayada', sans-serif;
-        font-weight: 700;
-    }
-
-    .active {
-        display: none;
-    }
-    
-    .serviceslist{
-        display:block;
-        margin-left: auto;
-        margin-right: auto;
-        height: 60%;
-        align-content: center;
-    }
-
-    .card {
-        width: 200px;
-    }
-    
-    .contact {
-        display: block;
-        height: 100%;
-        padding-top: 3vh;
-    }
-
-    .contact-form {
-        display:block;
-        width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .form {
-        margin-left: 2vw;
-        margin-right: 2vw;
-        width: 50%;
-    }
-
-    .contact-hours{
-        width: 80%;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .contact-hours h3 {
-        text-align: center;
-        font-size: 1.5rem;
-    }
-
-    .contact-hours p {
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .appt-btn {
-        display: inline;
-        margin-top:1.5rem;
-
-    }
-
-    footer {
-        height: 6vh;
-    }
-    footer ul li {
-        display: none;
-    }
-
-    footer h4 {
-       font-size: .9rem;
-
-    }
-}
-    
