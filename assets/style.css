@@ -37,7 +37,7 @@
 }
 
 .logo {
-  width: 45vw;
+  width: 50vw;
   color: #688f1e;
   display: flex;
   justify-content: center;
@@ -120,7 +120,7 @@
   background-position: center center;
   background-size: cover;
   height: 75vh;
-  margin-top: 138.5px;
+  margin-top: 132px;
   text-align: center;
 }
 
@@ -225,7 +225,7 @@
 }
 
 .contact-hours {
-  width: 40%;
+  width: 100%;
   text-align: center;
   margin: auto;
 }
@@ -275,7 +275,7 @@
   font-size: 1rem;
 }
 
-@media (max-width: 865px) {
+@media (max-width: 900px) {
   .nav-section {
     display: block;
   }
@@ -338,17 +338,13 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 650px) {
   .landing {
     margin-top: 170px;
   }
 
   .welcome {
     top: 25%;
-  }
-
-  .contact-hours {
-    width: 80%;
   }
 
   .footer-list {
